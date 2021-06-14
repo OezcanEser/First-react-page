@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+/* setup */
+
+* {
+    text-decoration: none;
+    list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header, h3, h4:not(li h4) {
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header ul, footer {
+    display: flex;
+    justify-content: center; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* font-sizes and divers */
+
+h1 {
+    font-size: 5rem;
+    border-bottom: 1px solid;
+    padding-bottom: 5vh;
+    width: 30%;
+    margin: 0 auto 3vh;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+    font-size: 3rem;
+    width: 55%;
+    margin: 0 auto;
+}
+
+h4 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+
+/* color */
+
+header {
+    background-color: #008005;
+}
+
+h1, h2 {
+    color: white;
+}
+
+section > h4 {
+    color: #008005;
+}
+
+figcaption h5 {
+    color: #9BCBEA;
+}
+
+figcaption p:nth-of-type(2) {
+    color: #5ee6b4;
+    font-weight: 900;
+}
+
+
+/* margins */
+
+header ul {
+    padding: 4vh 0;
+}
+
+header li h2 {
+    margin-top: 1vh;
+}
+
+header h4 {
+    padding-top: 7.5vh;
+    margin-top: 0;
+}
+
+header li p {
+    margin-bottom: 0vh;
+}
+
+section > h4 {
+    margin-top: 5vh;
+}
+
+section li h4 {
+    margin: 0;
+}
+
+
+/* header */
+
+header > p {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 3vh;
+}
+
+header li:not(:last-of-type) {
+    border-right: .25px solid white;
+    padding-right: 7.5vw;
+}
+
+header li:not(:first-of-type) {
+    border-left: .25px solid white;
+    padding-left: 7.5vw;
+}
+
+/* section */
+
+section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20vw;
+    margin: 10vh 10vw 5vh;
+}
+
+li {
+    position: relative;
+}
+
+section img {
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+    position: absolute;
+    left: -20%;
+    top: 5%
+}
+
+section li p {
+    line-height: 3vh;
+    margin-top: 0;
+}
+
+
+/* footer */
+
+figure {
+    width: 16vw;
+    margin: 0;
+    background-color: white;
+    padding: 0 2vw;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    height: 25vh;
+}
+
+footer {
+    flex-wrap: wrap;
+    background: lightgray;
+    margin: 0 5vw;
 }
